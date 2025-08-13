@@ -1,0 +1,19 @@
+{
+  "name": "smart-routing-logistics-platform",
+  "version": "1.0.0",
+  "description": "GIS-powered delivery/logistics platform with route optimization",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": ["logistics", "routing", "gis", "optimization", "delivery"],
+  "author": "Smart Routing Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
